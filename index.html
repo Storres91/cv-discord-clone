@@ -1,13 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Discord Clone</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>CV Discord Clone</title>
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/index.css" />
+
+        <!-- Other -->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    </head>
+    <body>
+        <div class="app-container bg-light">
+            <!-- Server selector  (desktop only)-->
+            <nav
+                class="servers-list flex-flow-vertical bg-dark"
+                aria-label="Servers list"
+            >
+                <ul>
+                    <li class="image-circle"></li>
+                    <li class="image-circle"></li>
+                    <li class="image-circle"></li>
+                    <li class="image-circle"></li>
+                    <li class="image-circle"></li>
+                </ul>
+            </nav>
+
+            <!-- Friends (desktop only) -->
+            <nav class="friends-list" aria-label="Friends list">
+                <div><button>Find or start a conversation</button></div>
+
+                <div>
+                    <div>
+                        <img src="" alt="" />
+                        <h2>Friends</h2>
+                    </div>
+
+                    <div>
+                        <img src="" alt="" />
+                        <h2>Nitro</h2>
+                    </div>
+                </div>
+
+                <div>
+                    <h2>DIRECT MESSAGES</h2>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <img src="" alt="Profile picture" />
+                    <div>
+                        <p>Storres91</p>
+                        <p>#2003</p>
+                    </div>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                </div>
+            </nav>
+
+            <!-- Conversation -->
+            <section class="conversation-container">
+                <div
+                    class="conversation__top-bar flex-apart padding-reg border-bottom"
+                >
+                    <div class="flex-apart">
+                        <i class="icon at-icon"></i>
+                        <h2>Discord</h2>
+                    </div>
+
+                    <div class="flex-apart">
+                        <input
+                            class="input__search padding-reg-horizontal bg-dark color-secondary"
+                            type="text"
+                            name="search-box"
+                            id="search-box"
+                            placeholder="Search"
+                        />
+                        <i class="icon inbox-icon"></i>
+                        <i class="icon help-icon"></i>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
 </html>
