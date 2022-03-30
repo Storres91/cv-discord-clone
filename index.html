@@ -22,109 +22,101 @@
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     </head>
     <body>
-        <div class="app-container bg-light">
-            <!-- Server selector  (desktop only)-->
-            <nav
-                class="servers-list flex-flow-vertical bg-dark"
-                aria-label="Servers list"
-            >
-                <ul>
-                    <li class="image-circle"></li>
-                    <li class="image-circle"></li>
-                    <li class="image-circle"></li>
-                    <li class="image-circle"></li>
-                    <li class="image-circle"></li>
-                </ul>
-            </nav>
-
-            <!-- Friends (desktop only) -->
-            <nav class="friends-list" aria-label="Friends list">
-                <div><button>Find or start a conversation</button></div>
-
-                <div>
-                    <div>
-                        <img src="" alt="" />
-                        <h2>Friends</h2>
-                    </div>
-
-                    <div>
-                        <img src="" alt="" />
-                        <h2>Nitro</h2>
-                    </div>
-                </div>
-
-                <div>
-                    <h2>DIRECT MESSAGES</h2>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <img src="" alt="Profile picture" />
-                    <div>
-                        <p>Storres91</p>
-                        <p>#2003</p>
-                    </div>
-                    <button></button>
-                    <button></button>
-                    <button></button>
-                </div>
-            </nav>
-
-            <!-- Conversation -->
-            <section class="conversation-container flex-flow-vertical">
-                <div
-                    class="conversation__top-bar flex-apart padding-reg border-bottom"
+        <div class="wrapper">
+            <div class="control-desktop-bar"></div>
+            <div class="app-container bg-light">
+                <!-- Server selector  (desktop only)-->
+                <nav
+                    class="servers-list flex-flow-vertical bg-dark"
+                    aria-label="Servers list"
                 >
-                    <div class="flex-apart">
-                        <i class="icon at-icon"></i>
-                        <h2>Discord</h2>
+                    <ul>
+                        <li class="image-circle"></li>
+                        <li class="image-circle"></li>
+                        <li class="image-circle"></li>
+                        <li class="image-circle"></li>
+                        <li class="image-circle"></li>
+                    </ul>
+                </nav>
+                <!-- Friends (desktop only) -->
+                <nav class="friends-list" aria-label="Friends list">
+                    <div><button>Find or start a conversation</button></div>
+                    <div>
+                        <div>
+                            <img src="" alt="" />
+                            <h2>Friends</h2>
+                        </div>
+                        <div>
+                            <img src="" alt="" />
+                            <h2>Nitro</h2>
+                        </div>
                     </div>
-
-                    <div class="flex-apart">
-                        <input
-                            class="input__search padding-reg-horizontal bg-dark color-secondary"
-                            type="text"
-                            name="search-box"
-                            id="search-box"
-                            placeholder="Search"
-                        />
-                        <i class="icon inbox-icon"></i>
-                        <i class="icon help-icon"></i>
+                    <div>
+                        <h2>DIRECT MESSAGES</h2>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
                     </div>
-                </div>
-
-                <div class="conversation-chat flex-flow-vertical padding-reg-horizontal">
-                    <div class="conversation__user-info flex-flow-vertical ">
-                        <img class="pfp" src="./assets/img/discord-pfp.png" alt="User pfp">
-                        <h2 class="chat__username fs-large">Discord</h2>
-                        <p>This is an official message from Team Discord. Please be advised that Discord will never ask you for your password or account token.</p>
+                    <div>
+                        <img src="" alt="Profile picture" />
+                        <div>
+                            <p>Storres91</p>
+                            <p>#2003</p>
+                        </div>
+                        <button></button>
+                        <button></button>
+                        <button></button>
                     </div>
-
-                    <div class="chat-separator detail"><span class="small-date">8 March 2022</span></div>
-
-                    <div class="container__conversation-input padding-reg-horizontal bg-lightly flex-flow">
-                        <i class="icon attachments-icon"></i>
-                        <input contenteditable="true" class="conversation-input" type="text">
-                        <i class="icon gift-icon"></i>
-                        <i class="icon gif-icon"></i>
-                        <i class="icon stickers-icon"></i>
-                        <i class="icon emoji-icon"></i>
+                </nav>
+                <!-- Conversation -->
+                <section class="conversation-container flex-flow-vertical">
+                    <div
+                        class="conversation__top-bar flex-apart padding-reg shadow-bottom"
+                    >
+                        <div class="flex-apart">
+                            <i class="icon at-icon"></i>
+                            <h2>Discord</h2>
+                        </div>
+                        <div class="flex-apart">
+                            <input
+                                class="input__search padding-reg-horizontal bg-dark color-secondary"
+                                type="text"
+                                name="search-box"
+                                id="search-box"
+                                placeholder="Search"
+                            />
+                            <i class="icon inbox-icon"></i>
+                            <i class="icon help-icon"></i>
+                        </div>
                     </div>
-                </div>
-
-                
-            </section>
+                    <div class="conversation-chat flex-flow-vertical padding-reg-horizontal">
+                        <div class="conversation__user-info flex-flow-vertical ">
+                            <img class="pfp" src="./assets/img/discord-pfp.png" alt="User pfp">
+                            <h2 class="chat__username fs-large">Discord</h2>
+                            <p>This is an official message from Team Discord. Please be advised that Discord will never ask you for your password or account token.</p>
+                        </div>
+                        <div class="chat-separator detail"><span class="small-date">8 March 2022</span></div>
+                        <div class="container__conversation-input padding-reg-horizontal bg-lightly flex-flow">
+                            <i class="icon attachments-icon"></i>
+                            <input contenteditable="true" class="conversation-input" type="text" placeholder="Message @Discord">
+                            <i class="icon gift-icon"></i>
+                            <i class="icon gif-icon"></i>
+                            <i class="icon stickers-icon"></i>
+                            <i class="icon emoji-icon"></i>
+                        </div>
+                    </div>
+            
+                </section>
+            </div>
         </div>
     </body>
 </html>
