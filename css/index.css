@@ -46,27 +46,22 @@ body {
     display: flex;
     place-content: center;
     align-items: center;
-
-    /* For desktop */
-    /* background: var(--discord-background);
-    background-size: auto;
-    background-repeat: no-repeat; */
-}
-
-.wrapper {
-    width: 100%;
-    height: 100%;
-    max-width: 1280px;
-    max-height: 720px;
+    background: var(--discord-background);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* Composition */
+.wrapper {
+    width: 100%;
+    height: 100%;
+    max-width: 1350px;
+    max-height: 650px;
+}
 
 .app-container {
     width: 100%;
     height: 100%;
-    max-width: 1280px;
-    max-height: 720px;
     padding-bottom: 0.8em;
 }
 
@@ -240,6 +235,7 @@ p {
 
 .conversation__top-bar {
     width: 100%;
+    z-index: 9;
 }
 
 .conversation__top-bar--right {
@@ -262,11 +258,21 @@ p {
 }
 
 .messages-container {
+    position: relative;
     width: 100%;
     height: 100%;
     padding: 0.6em 0.6em 0 0.6em;
     overflow-y: auto;
 }
+
+
+.messages-wrapper {
+    height: auto;
+    max-height: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+
 
 .conversation-chat {
     width: 100%;
@@ -302,11 +308,13 @@ p {
 }
 
 .container__conversation-input {
-    width: 100%;
+    width: 99%;
     padding-top: 0.8em;
     padding-bottom: 0.8em;
     border-radius: 0.8em;
     margin-top: 0.2em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .conversation-input{
@@ -340,13 +348,15 @@ p {
     margin-right: 0;
 }
 
-@media screen and ((min-width:1050px) or (min-height:720px)) {
-    body {
-        background: var(--discord-background);
-        background-size: cover;
-        background-repeat: no-repeat;
+@media screen and (max-width:900px), screen and (max-height:826) {
+    .wrapper {
+        max-width: 100vw;
+        max-height: 100vh;
     }
+    
+}
 
+@media screen and (min-width:1535px), screen and (min-height:863px) {
     .wrapper {
         border-radius: 5px;
         -webkit-box-shadow:1px 1px 10px 0px rgba(220, 221, 222, 0.384);
@@ -361,7 +371,9 @@ p {
         height: 10px;
         background-color: var(--color-primary-dark);
     }
+}
 
+@media screen and (min-width: 500px){
     .gift-icon {
         display: block;
     }
