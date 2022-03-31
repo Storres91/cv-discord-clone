@@ -22,7 +22,7 @@
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     </head>
     <body>
-        <div class="wrapper">
+        <div class="wrapper flex-flow-vertical">
             <div class="control-desktop-bar"></div>
             <div class="app-container bg-light">
                 <!-- Server selector  (desktop only)-->
@@ -38,6 +38,7 @@
                         <li class="image-circle"></li>
                     </ul>
                 </nav>
+
                 <!-- Friends (desktop only) -->
                 <nav class="friends-list" aria-label="Friends list">
                     <div><button>Find or start a conversation</button></div>
@@ -77,8 +78,11 @@
                         <button></button>
                     </div>
                 </nav>
+
                 <!-- Conversation -->
                 <section class="conversation-container flex-flow-vertical">
+
+                    <!-- Conversation top navigation bar -->
                     <div
                         class="conversation__top-bar flex-apart padding-reg shadow-bottom"
                     >
@@ -98,23 +102,60 @@
                             <i class="icon help-icon"></i>
                         </div>
                     </div>
-                    <div class="conversation-chat flex-flow-vertical padding-reg-horizontal">
+
+                    <!-- Messages container -->
+                    <div class="messages-container">
                         <div class="conversation__user-info flex-flow-vertical ">
                             <img class="pfp" src="./assets/img/discord-pfp.png" alt="User pfp">
                             <h2 class="chat__username fs-large">Discord</h2>
                             <p>This is an official message from Team Discord. Please be advised that Discord will never ask you for your password or account token.</p>
                         </div>
+
                         <div class="chat-separator detail"><span class="small-date">8 March 2022</span></div>
-                        <div class="container__conversation-input padding-reg-horizontal bg-lightly flex-flow">
-                            <i class="icon attachments-icon"></i>
-                            <input contenteditable="true" class="conversation-input" type="text" placeholder="Message @Discord">
-                            <i class="icon gift-icon"></i>
-                            <i class="icon gif-icon"></i>
-                            <i class="icon stickers-icon"></i>
-                            <i class="icon emoji-icon"></i>
+
+                        <!-- Message 1 -->
+                        <div class="message-block padding-reg-horizontal flex-flow">
+                            <img class="pfp-small" src="./assets/img/discord-pfp.png" alt="Profile picture">
+                            <div class="message-content">
+                                <h3>Discord</h3>
+                                <p>Hey Noxet!<br>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, earum ab molestias eum minima ad alias labore tempora modi id eos accusantium voluptate odio iure laborum! Ullam eligendi architecto officia!
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- Message 2 -->
+                        <div class="message-block padding-reg-horizontal flex-flow">
+                            <img class="pfp-small" src="./assets/img/discord-pfp.png" alt="Profile picture">
+                            <div class="message-content">
+                                <h3>Discord</h3>
+                                <p>Hey Noxet!<br>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, earum ab molestias eum minima ad alias labore tempora modi id eos accusantium voluptate odio iure laborum! Ullam eligendi architecto officia!
+                                </p>
+                            </div>
+                        </div>
+
+                         <!-- Message 3 -->
+                        <div class="message-block padding-reg-horizontal flex-flow">
+                            <img class="pfp-small" src="./assets/img/discord-pfp.png" alt="Profile picture">
+                            <div class="message-content">
+                                <h3>Discord</h3>
+                                <p>Hey Noxet!<br>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, earum ab molestias eum minima ad alias labore tempora modi id eos accusantium voluptate odio iure laborum! Ullam eligendi architecto officia!
+                                </p>
+                            </div>
                         </div>
                     </div>
-            
+
+                    <!-- Input message container-->
+                    <div class="container__conversation-input padding-reg-horizontal bg-lightly flex-flow">
+                        <i class="icon attachments-icon"></i>
+                        <input contenteditable="true" class="conversation-input" type="text" placeholder="Message @Discord">
+                        <i class="icon gift-icon"></i>
+                        <i class="icon gif-icon"></i>
+                        <i class="icon stickers-icon"></i>
+                        <i class="icon emoji-icon"></i>
+                    </div>
                 </section>
             </div>
         </div>
