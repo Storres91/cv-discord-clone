@@ -1,0 +1,151 @@
+:root {
+    --color-green: #57f287;
+    --color-yellow: #fee75c;
+    --color-fuchsia: #eb459e;
+    --color-red: #ed4245;
+    --color-white: #ffffff;
+    --color-black: #000000;
+
+    --color-primary-lightly: #40444b;
+    --color-primary-light: #36393f;
+    --color-primary-medium: #2f3136;
+    --color-primary-dark: #202225;
+
+    --color-secondary: #5865f2;
+
+    --text-secondary: #dcddde;
+    --text-detail: #6c7077;
+    --text-description: #b9bbbe;
+
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-regularp: 500;
+    --fw-bold: 600;
+    --fw-bolder: 700;
+
+    --fs-smallest: 0.6rem;
+    --fs-smaller: 0.8rem;
+    --fs-small: 1rem;
+    --fs-medium: 1.2rem;
+    --fs-large: 1.4rem;
+
+    --discord-background: url("../assets/img/discord-app-background.png");
+}
+
+/*------------------------ Block ------------------------*/
+/* Servers */
+.servers-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.servers-list>ul>li {
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--color-green);
+    border-radius: 50%;
+}
+
+.server:not(:last-child) {
+    margin-bottom: 0.8em;
+}
+
+/* Friends */
+.friends-list {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Conversation */
+.conversation__top-bar {
+    width: 100%;
+    z-index: 9;
+}
+
+.conversation__top-bar--right {
+    display: flex;
+}
+
+.input__search {
+    margin-right: 10px;
+    width: 8rem;
+    border: none;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    border-radius: 4px;
+}
+
+.input__search:focus-visible,
+.input__search:hover {
+    outline: none;
+    transform: scale(1.05);
+}
+
+.messages-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0.6em 0.6em 0 0.6em;
+    overflow-y: auto;
+}
+
+
+.messages-wrapper {
+    height: auto;
+    max-height: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+
+
+.conversation-chat {
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.conversation__user-info {
+    justify-content: flex-start;
+    
+}
+
+.chat__username {
+    margin-bottom: .5em;
+}
+
+.chat-separator {
+    display: flex;
+    width: 100%;
+    height: 1px;
+    background-color: var(--text-detail);
+    margin: var(--fs-smaller) 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.message-block {
+    width: 100%;
+    margin-bottom: 1em;
+    gap: 0.8em;
+    align-items: flex-start;
+}
+
+.container__conversation-input {
+    width: 99%;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    border-radius: 0.8em;
+    margin-top: 0.2em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.conversation-input{
+    width: 100%;
+    background-color: inherit;
+    border: 0px solid;
+    outline: none;
+    color: var(--text-secondary);
+    padding-right: 0.8em;
+}

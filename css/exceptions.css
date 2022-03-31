@@ -1,0 +1,54 @@
+:root {
+    --color-green: #57f287;
+    --color-yellow: #fee75c;
+    --color-fuchsia: #eb459e;
+    --color-red: #ed4245;
+    --color-white: #ffffff;
+    --color-black: #000000;
+
+    --color-primary-lightly: #40444b;
+    --color-primary-light: #36393f;
+    --color-primary-medium: #2f3136;
+    --color-primary-dark: #202225;
+
+    --color-secondary: #5865f2;
+
+    --text-secondary: #dcddde;
+    --text-detail: #6c7077;
+    --text-description: #b9bbbe;
+
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-regularp: 500;
+    --fw-bold: 600;
+    --fw-bolder: 700;
+
+    --fs-smallest: 0.6rem;
+    --fs-smaller: 0.8rem;
+    --fs-small: 1rem;
+    --fs-medium: 1.2rem;
+    --fs-large: 1.4rem;
+
+    --discord-background: url("../assets/img/discord-app-background.png");
+}
+
+/* Exception */
+
+.at-icon {
+    cursor: initial;
+    margin-right: 5px;
+}
+
+.help-icon {
+    margin-right: 0;
+}
+
+.chat-separator>span {
+    opacity: 1;
+    padding: 0 var(--fs-smallest);
+    background-color: var(--color-primary-light);
+}
+
+.emoji-icon {
+    margin-right: 0;
+}

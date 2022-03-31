@@ -17,6 +17,9 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="./css/index.css" />
+        <link rel="stylesheet" href="./css/blocks.css" />
+        <link rel="stylesheet" href="./css/exceptions.css" />
+        <link rel="stylesheet" href="./css/media-queries.css" />
 
         <!-- Other -->
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
@@ -26,62 +29,65 @@
             <div class="control-desktop-bar"></div>
             <div class="app-container bg-light">
                 <!-- Server selector  (desktop only)-->
-                <nav
-                    class="servers-list flex-flow-vertical bg-dark"
-                    aria-label="Servers list"
-                >
-                    <ul>
-                        <li class="image-circle"></li>
-                        <li class="image-circle"></li>
-                        <li class="image-circle"></li>
-                        <li class="image-circle"></li>
-                        <li class="image-circle"></li>
-                    </ul>
-                </nav>
+                <section class="servers-container padding-reg">
+                    <nav
+                        class="servers-list flex-flow-vertical bg-dark"
+                        aria-label="Servers list"
+                    >
+                        <ul>
+                            <li class="server"></li>
+                            <li class="server"></li>
+                            <li class="server"></li>
+                            <li class="server"></li>
+                            <li class="server"></li>
+                        </ul>
+                    </nav>
+                </section>
 
                 <!-- Friends (desktop only) -->
-                <nav class="friends-list" aria-label="Friends list">
-                    <div><button>Find or start a conversation</button></div>
-                    <div>
+                <section class="friends-container padding-reg">
+                    <nav class="friends-list" aria-label="Friends list">
+                        <div><button>Find or start a conversation</button></div>
                         <div>
-                            <img src="" alt="" />
-                            <h2>Friends</h2>
+                            <div>
+                                <img src="" alt="" />
+                                <h2>Friends</h2>
+                            </div>
+                            <div>
+                                <img src="" alt="" />
+                                <h2>Nitro</h2>
+                            </div>
                         </div>
                         <div>
-                            <img src="" alt="" />
-                            <h2>Nitro</h2>
+                            <h2>DIRECT MESSAGES</h2>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
                         </div>
-                    </div>
-                    <div>
-                        <h2>DIRECT MESSAGES</h2>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <img src="" alt="Profile picture" />
                         <div>
-                            <p>Storres91</p>
-                            <p>#2003</p>
+                            <img src="" alt="Profile picture" />
+                            <div>
+                                <p>Storres91</p>
+                                <p>#2003</p>
+                            </div>
+                            <button></button>
+                            <button></button>
+                            <button></button>
                         </div>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                    </div>
-                </nav>
+                    </nav>
+                </section>
 
                 <!-- Conversation -->
                 <section class="conversation-container flex-flow-vertical">
-
                     <!-- Conversation top navigation bar -->
                     <div
                         class="conversation__top-bar flex-apart padding-reg shadow-bottom"
@@ -106,39 +112,88 @@
                     <!-- Messages container -->
                     <div class="messages-container">
                         <div class="messages-wrapper">
-                            <div class="conversation__user-info flex-flow-vertical ">
-                                <img class="pfp" src="./assets/img/discord-pfp.png" alt="User pfp">
+                            <div
+                                class="conversation__user-info flex-flow-vertical"
+                            >
+                                <img
+                                    class="pfp"
+                                    src="./assets/img/discord-pfp.png"
+                                    alt="User pfp"
+                                />
                                 <h2 class="chat__username fs-large">Discord</h2>
-                                <p>This is an official message from Team Discord. Please be advised that Discord will never ask you for your password or account token.</p>
+                                <p>
+                                    This is an official message from Team
+                                    Discord. Please be advised that Discord will
+                                    never ask you for your password or account
+                                    token.
+                                </p>
                             </div>
-                            <div class="chat-separator detail"><span class="small-date">8 March 2022</span></div>
+                            <div class="chat-separator detail">
+                                <span class="small-date">8 March 2022</span>
+                            </div>
                             <!-- Message 1 -->
-                            <div class="message-block padding-reg-horizontal flex-flow">
-                                <img class="pfp-small" src="./assets/img/discord-pfp.png" alt="Profile picture">
+                            <div
+                                class="message-block padding-reg-horizontal flex-flow"
+                            >
+                                <img
+                                    class="pfp-small"
+                                    src="./assets/img/discord-pfp.png"
+                                    alt="Profile picture"
+                                />
                                 <div class="message-content">
                                     <h3>Discord</h3>
-                                    <p>Hey Noxet!<br>
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, earum ab molestias eum minima ad alias labore tempora modi id eos accusantium voluptate odio iure laborum! Ullam eligendi architecto officia!
+                                    <p>
+                                        Hey Noxet!<br />
+                                        Lorem ipsum, dolor sit amet consectetur
+                                        adipisicing elit. Explicabo, earum ab
+                                        molestias eum minima ad alias labore
+                                        tempora modi id eos accusantium
+                                        voluptate odio iure laborum! Ullam
+                                        eligendi architecto officia!
                                     </p>
                                 </div>
                             </div>
-                                <!-- Message 2 -->
-                            <div class="message-block padding-reg-horizontal flex-flow">
-                                <img class="pfp-small" src="./assets/img/discord-pfp.png" alt="Profile picture">
+                            <!-- Message 2 -->
+                            <div
+                                class="message-block padding-reg-horizontal flex-flow"
+                            >
+                                <img
+                                    class="pfp-small"
+                                    src="./assets/img/discord-pfp.png"
+                                    alt="Profile picture"
+                                />
                                 <div class="message-content">
                                     <h3>Discord</h3>
-                                    <p>Hey Noxet!<br>
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, earum ab molestias eum minima ad alias labore tempora modi id eos accusantium voluptate odio iure laborum! Ullam eligendi architecto officia!
+                                    <p>
+                                        Hey Noxet!<br />
+                                        Lorem ipsum, dolor sit amet consectetur
+                                        adipisicing elit. Explicabo, earum ab
+                                        molestias eum minima ad alias labore
+                                        tempora modi id eos accusantium
+                                        voluptate odio iure laborum! Ullam
+                                        eligendi architecto officia!
                                     </p>
                                 </div>
                             </div>
-                                <!-- Message 3 -->
-                            <div class="message-block padding-reg-horizontal flex-flow">
-                                <img class="pfp-small" src="./assets/img/discord-pfp.png" alt="Profile picture">
+                            <!-- Message 3 -->
+                            <div
+                                class="message-block padding-reg-horizontal flex-flow"
+                            >
+                                <img
+                                    class="pfp-small"
+                                    src="./assets/img/discord-pfp.png"
+                                    alt="Profile picture"
+                                />
                                 <div class="message-content">
                                     <h3>Discord</h3>
-                                    <p>Hey Noxet!<br>
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, earum ab molestias eum minima ad alias labore tempora modi id eos accusantium voluptate odio iure laborum! Ullam eligendi architecto officia!
+                                    <p>
+                                        Hey Noxet!<br />
+                                        Lorem ipsum, dolor sit amet consectetur
+                                        adipisicing elit. Explicabo, earum ab
+                                        molestias eum minima ad alias labore
+                                        tempora modi id eos accusantium
+                                        voluptate odio iure laborum! Ullam
+                                        eligendi architecto officia!
                                     </p>
                                 </div>
                             </div>
@@ -146,9 +201,16 @@
                     </div>
 
                     <!-- Input message container-->
-                    <div class="container__conversation-input padding-reg-horizontal bg-lightly flex-flow">
+                    <div
+                        class="container__conversation-input padding-reg-horizontal bg-lightly flex-flow"
+                    >
                         <i class="icon attachments-icon"></i>
-                        <input contenteditable="true" class="conversation-input" type="text" placeholder="Message @Discord">
+                        <input
+                            contenteditable="true"
+                            class="conversation-input"
+                            type="text"
+                            placeholder="Message @Discord"
+                        />
                         <i class="icon gift-icon"></i>
                         <i class="icon gif-icon"></i>
                         <i class="icon stickers-icon"></i>
